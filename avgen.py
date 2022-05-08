@@ -21,10 +21,6 @@ class GaussianReducer():
         var = (alpha_x**2 * x_var) + alpha_y**2 * y_var
         return (mean, var)
 
-SIZE = 1_000_000
-DIM = 5
-TOTAL = 1000
-
 def avgen(dim, samples):
     rng = default_rng()
     X = rng.dirichlet(np.ones(dim), (samples,))
@@ -36,7 +32,7 @@ def avgen(dim, samples):
 def main(dim, samples, jobs):
     with cf.ProcessPoolExecutor() as executor:
         job_list = [executor.submit(avgen, dim, samples) for _ in range(jobs)]
-        mean, var = reduce(GaussianReducer(), map(lambda f: f.result(), tqdm(cf.as_completed(job_list), total=TOTAL)))
+        mean, var = reduce(GaussianReducer(), map(lambda f: f.result(), tqdm(cf.as_completed(job_list), total=jobs)))
         std = np.sqrt(var)
         print(mean-2.96*std, mean, mean + 2.96*std)
 

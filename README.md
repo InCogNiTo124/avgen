@@ -21,3 +21,16 @@ Where `E(d)` is the expected entropy of a d-dimensional probability distribution
 ## Proof
 
 None so far, however something tells me it could be done using mathematical induction.
+
+# Script usage
+
+```
+usage: avgen.py [-h] -d DIM [-s SAMPLES] [-j JOBS]
+
+options:
+  -h, --help            show this help message and exit
+  -d DIM, --dim DIM     The dimension of the probability distribution. >= 1
+  -s SAMPLES, --samples SAMPLES
+                        the number of the distributions sampled in a job
+  -j JOBS, --jobs JOBS  the number of jobs to paralelize the sampling
+```
