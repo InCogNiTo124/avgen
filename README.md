@@ -16,7 +16,7 @@ Calculate the average entropy of all n-dimensional probability distributions wit
 
 $$ E(d)=\sum_{i=1}^d{\frac1{i+1}} = H_d-1 $$
 
-Where `E(d)` is the expected entropy of a d-dimensional probability distribution with respect to d, `H_n` is a [harmonic number](https://en.wikipedia.org/wiki/Harmonic_number), a partial sum of a harmonic sequence.
+Where $ E(d) $ is the expected entropy of a $ d $-dimensional probability distribution with respect to $d$, $H_n$ is a [harmonic number](https://en.wikipedia.org/wiki/Harmonic_number), a partial sum of a harmonic sequence.
 
 ## Proof
 
