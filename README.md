@@ -9,8 +9,8 @@ Calculate the average entropy of all n-dimensional probability distributions wit
 |         1 | $ 0 $ |
 |         2 | $ \frac{1}{2} $ |
 |         3 | $ \frac{5}{6} $ |
-|         4 | $ \frac{13}{12}}) $ |
-|         5 | $ \frac{77}{60}}) $ |
+|         4 | $ \frac{13}{12} $ |
+|         5 | $ \frac{77}{60} $ |
 
 ## Conjecture
 
